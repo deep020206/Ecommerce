@@ -1,0 +1,27 @@
+{
+  "name": "shema",
+  "version": "1.0.0",
+  "description": "Shema MERN Stack Ecommerce application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client start",
+    "seed": "npm --prefix server run seed",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix client test -- --watchAll=false"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bereky/shema-mern-ecommerce.git"
+  },
+  "author": "Bereket Lemma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bereky/shema-mern-ecommerce/issues"
+  },
+  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme"
+}
